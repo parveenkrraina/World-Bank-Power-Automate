@@ -1,134 +1,111 @@
 # World Bank Power Automate Training
 
-Welcome to the **World Bank Power Automate Training** repository! This resource is designed to guide you through hands-on automation training using Microsoft Power Automate, Dataverse, SharePoint, and related Microsoft 365 tools. The repository is organized to help you build practical automation skills through structured modules and labs.
+Welcome to the **World Bank Power Automate Training** repository! This comprehensive resource provides hands-on labs, challenges, and reference materials for building automation solutions using Microsoft Power Automate, SharePoint, and related Microsoft 365 tools.
 
 ---
 
-## Table of Contents
+## 📋 Table of Contents
 
-1. [Introduction](#introduction)
-2. [Setup & Prerequisites](#setup--prerequisites)
-3. [Lab Overview](#lab-overview)
+1. [Overview](#overview)
+2. [Getting Started](#getting-started)
+3. [Lab Structure](#lab-structure)
 4. [Training Modules](#training-modules)
-5. [Resources](#resources)
-6. [Changelog](#changelog)
+5. [Challenges](#challenges)
+6. [Prerequisites & Setup](#prerequisites--setup)
+7. [Resources](#resources)
 
 ---
 
-## Introduction
+## Overview
 
-This repository provides step-by-step labs and reference materials for automating business processes. Whether you are new to Power Platform or looking to deepen your automation expertise, these modules will help you learn by doing.
-
----
-
-## Setup & Prerequisites
-
-Before starting, ensure you have access to the following environments and tools:
-
-### SharePoint Lists
-
-- **Employee_Onboarding**:  
-   Columns – Title, EmployeeName, Role, StartDate
-- **PurchaseOrders**:  
-   Columns – Title, Amount, Department, Status
-- **Expenses**:  
-   Columns – Title, Employee, Amount, Status
-
-### OneDrive Folders
-
-- `/Training/Invoices_Inbox`
-- `/Training/SalesReports`
-- `/Training/EmployeeDocs`
-
-### Microsoft Teams
-
-- **Team:** Automation Training  
-- **Channel:** ops-alerts
-
-### Additional Requirements
-
-- **Power BI Dataset:** Publish a sample dataset named `OpsDashboard`.
-- **Azure Storage:** Create a blob container named `linux-logs`.
+This repository is organized to help you learn Power Automate through structured, hands-on labs and real-world challenges. Whether you're new to Power Platform or looking to deepen your automation expertise, you'll build practical skills by automating common business scenarios.
 
 ---
 
-## Lab Overview
+## Getting Started
 
-The repository includes practical labs covering a range of automation scenarios:
+Begin with [Lab 0 – Setup](CloudFlows-Labs/Lab-00.md) to configure your SharePoint lists, OneDrive folders, and Microsoft Teams environment before proceeding to the main training modules.
 
-- **Lab 1:** Send automated welcome emails to new employees.
-- **Lab 2:** Automatically save invoice attachments from emails to OneDrive.
-- **Lab 3:** Create and manage SharePoint lists for business data.
-- **Lab 4:** Build approval workflows for SharePoint items.
-- **Lab 5:** Design button-triggered flows for instant actions.
-- **Lab 6:** Schedule flows to automate recurring SharePoint data processing.
+---
 
-Each lab provides detailed, step-by-step instructions and sample data where applicable.
+## Lab Structure
+
+All labs are located in the `CloudFlows-Labs/` folder and follow a consistent structure:
+
+- **Step-by-step instructions** for creating flows
+- **Detailed objectives** for each module
+- **Sample data and configurations**
+- **Expected outcomes** for validation
 
 ---
 
 ## Training Modules
 
-### Create Cloud Flows
+### Module 1: Creating Cloud Flows
+- **Lab:** [M01L01_Create_flows.md](CloudFlows-Labs/M01L01_Create_flows.md)
+- **Objective:** Learn to create cloud flows using templates and custom logic
 
-- **Objective:** Learn to create cloud flows using templates and custom logic.
-- **Lab:** [Practice Lab 1 – Create Cloud Flows](Labs/M01L01_Create_flows.md)
+### Module 2: Data Modeling
+- **Lab:** [M02L01_Data_model.md](CloudFlows-Labs/M02L01_Data_model.md)
+- **Objective:** Build structured data models for automation
 
-### Data Modeling
-
-- **Objective:** Build Dataverse tables, columns, and relationships for structured data storage.
-- **Lab:** [Practice Lab 2 – Data Model](Labs/M02L01_Data_model.md)
-
-### SharePoint Integration and Approval Flows
-
-- **Objective:** Integrate Power Automate with SharePoint and implement approval processes.
+### Module 3: SharePoint Integration
 - **Labs:**
-   - [Practice Lab 3 – SharePoint](Labs/M03L01_SharePoint.md)
-   - [Practice Lab 4 – Approval Flow](Labs/M03L02_Approval_flow.md)
+  - [M03L01_SharePoint.md](CloudFlows-Labs/M03L01_SharePoint.md) – SharePoint integration
+  - [M03L02_Approval_flow.md](CloudFlows-Labs/M03L02_Approval_flow.md) – Building approval workflows
 
-### Button Flows
+### Module 4: Button Flows
+- **Lab:** [M04L01_Button_flow.md](CloudFlows-Labs/M04L01_Button_flow.md)
+- **Objective:** Create instant flows triggered by user actions
 
-- **Objective:** Create instant flows triggered by user actions.
-- **Lab:** [Practice Lab 5 – Button Flow](Labs/M04L01_Button_flow.md)
+### Module 5: Scheduled Flows
+- **Lab:** [M05L01_Scheduled_flow.md](CloudFlows-Labs/M05L01_Scheduled_flow.md)
+- **Objective:** Automate recurring tasks using scheduled flows
 
-### Scheduled Flows
-
-- **Objective:** Automate recurring tasks using scheduled flows.
-- **Lab:** [Practice Lab 6 – Scheduled Flow](Labs/M05L01_Scheduled_flow.md)
+### Additional Labs
+- [Lab-01.md](CloudFlows-Labs/Lab-01.md)
+- [Lab-02.md](CloudFlows-Labs/Lab-02.md)
+- [Lab-03.md](CloudFlows-Labs/Lab-03.md)
+- [Lab-09.md](CloudFlows-Labs/Lab-09.md)
 
 ---
 
-## Resources
+## Challenges
 
-### Cloud Flows
-Here are some recommended Microsoft Learn modules and learning paths for building expertise with Power Automate cloud flows:
+Test your skills with real-world scenarios:
 
-- [Get started with Power Automate flows](https://learn.microsoft.com/en-us/training/modules/get-started-flows/)
-- [Send email with Power Automate](https://learn.microsoft.com/en-us/training/modules/email-power-automate/)
-- [Introduction to approvals in Power Automate](https://learn.microsoft.com/en-us/training/modules/approvals-power-automate/)
-- [Build approval flows with Power Automate](https://learn.microsoft.com/en-us/training/modules/build-approval-flows/)
-- [Manage user information in Power Automate](https://learn.microsoft.com/en-us/training/modules/manage-user-information/)
-- [Use multiple data sources in Power Automate](https://learn.microsoft.com/en-us/training/modules/multiple-data-sources/)
-- [Introduction to expressions in Power Automate](https://learn.microsoft.com/en-us/training/modules/introduction-expressions/)
-- [Use input parameters in Power Automate](https://learn.microsoft.com/en-us/training/modules/input-parameters/)
-- [Error handling in Power Automate](https://learn.microsoft.com/en-us/training/modules/error-handling/)
-- [Share a cloud flow in Power Automate](https://learn.microsoft.com/en-us/training/modules/share-cloud-flow/)
-- [Use HTTP connectors in Power Automate](https://learn.microsoft.com/en-us/training/modules/http-connectors/)
-- [Build and optimize cloud flows with Power Automate (Learning Path)](https://learn.microsoft.com/en-us/training/paths/build-optimize-cloud-flows-power-automate/)
-- [Import and export solutions in Power Platform](https://learn.microsoft.com/en-us/training/modules/import-export-solutions/)
+- [Challenge 1 – HR Onboarding and Operations Automation](CloudFlows-Labs/Challenge-01.md)
+- [Challenge 2](CloudFlows-Labs/Challenge-02.md)
 
+These challenges build on the concepts learned in the labs and provide practical, end-to-end automation scenarios.
 
-### Power Platform Development Tools
-
-- [Power Platform ALM Tools](https://learn.microsoft.com/en-us/power-platform/developer/tools-alm)
-
-### Dataverse Developer Tools
-
-- [Download Dataverse Developer Tools (NuGet)](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/download-tools-nuget)
-
-### Power Automate Expressions
-
-- [Power Automate Expressions](https://learn.microsoft.com/en-us/azure/logic-apps/expression-functions-reference)
 ---
 
-Feel free to explore the repository, follow the lab instructions, and contribute your feedback or improvements. For questions or support, contact @parveenkrraina or open a discussion.
+## Prerequisites & Setup
+
+### Required Environment Setup
+
+**SharePoint Lists:**
+- **Employee_Onboarding** – Columns: Title, EmployeeName, Role, StartDate
+- **PurchaseOrders** – Columns: Title, Amount, Department, Status
+- **Expenses** – Columns: Title, Employee, Amount, Status
+
+**OneDrive Folders:**
+- `/Training/Invoices_Inbox`
+- `/Training/SalesReports`
+- `/Training/EmployeeDocs`
+
+**Microsoft Teams:**
+- **Team:** Automation Training
+- **Channel:** ops-alerts
+
+For detailed setup instructions, see [Lab 0 – Setup](CloudFlows-Labs/Lab-00.md).
+
+
+## Support & Contribution
+
+For questions or to report issues, contact the repository maintainer or open a discussion. Contributions are welcome—feel free to improve labs, add additional resources, or share your automation scenarios.
+
+---
+
+**Happy automating!** 🚀

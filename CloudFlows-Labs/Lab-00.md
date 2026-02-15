@@ -41,19 +41,3 @@
 - **Channel:** ops-alerts
 
 ---
-
-## Power BI Dataset (Optional for Day 3)
-
-- Publish any sample report or dataset named **OpsDashboard** to a workspace you can refresh from Power Automate.
-
----
-
-## Azure Storage (for Day 3 Linux Integration)
-
-- **Storage account → Blob container:** `linux-logs`
-
----
-
-> **Tip:** Use test/demo accounts and a dedicated training environment to avoid DLP noise (see Module 11).
-
----
