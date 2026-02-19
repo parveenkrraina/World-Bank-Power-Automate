@@ -112,7 +112,6 @@ For questions or to report issues, contact the repository maintainer or open a d
 - [First Steps – Create a Simple Flow](https://learn.microsoft.com/en-us/training/modules/pad-first-steps/5-exercise-create-simple-flow)
 - [Excel Automation](https://learn.microsoft.com/en-us/training/modules/pad-excel-automation/7-exercise)
 - [Email – Confirm Support Tickets](https://learn.microsoft.com/en-us/training/modules/pad-email/5-exercise-confirm-support-tickets)
-- [Web](https://learn.microsoft.com/en-us/training/modules/pad-web/6-exercise)
 - [Variables – Create and Manipulate Variables](https://learn.microsoft.com/en-us/training/modules/pad-variables/8-exercise-create-manipulate-variables)
 - [Loops](https://learn.microsoft.com/en-us/training/modules/pad-loops/6-exercise-loops)
 - [Recording Web Flows](https://learn.microsoft.com/en-us/training/modules/pad-power-automate-desktop-recording-features/3-exercise-recording-web-flows)
