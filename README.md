@@ -108,4 +108,21 @@ For questions or to report issues, contact the repository maintainer or open a d
 
 ---
 
+## Additional Lab for Practice using Power Automate Desktop
+- [First Steps – Create a Simple Flow](https://learn.microsoft.com/en-us/training/modules/pad-first-steps/5-exercise-create-simple-flow)
+- [Excel Automation](https://learn.microsoft.com/en-us/training/modules/pad-excel-automation/7-exercise)
+- [Email – Confirm Support Tickets](https://learn.microsoft.com/en-us/training/modules/pad-email/5-exercise-confirm-support-tickets)
+- [Web](https://learn.microsoft.com/en-us/training/modules/pad-web/6-exercise)
+- [Variables – Create and Manipulate Variables](https://learn.microsoft.com/en-us/training/modules/pad-variables/8-exercise-create-manipulate-variables)
+- [Loops](https://learn.microsoft.com/en-us/training/modules/pad-loops/6-exercise-loops)
+- [Recording Web Flows](https://learn.microsoft.com/en-us/training/modules/pad-power-automate-desktop-recording-features/3-exercise-recording-web-flows)
+- [Recording Desktop Flows](https://learn.microsoft.com/en-us/training/modules/pad-power-automate-desktop-recording-features/4-exercise-recording-desktop-flows)
+- [Scripting – VBScript](https://learn.microsoft.com/en-us/training/modules/pad-scripting/3-exercise-vbscript)
+- [Scripting – JavaScript](https://learn.microsoft.com/en-us/training/modules/pad-scripting/4-exercise-javascript)
+- [Web – Extract Data](https://learn.microsoft.com/en-us/training/modules/pad-web/4-extract-data)
+- [Web](https://learn.microsoft.com/en-us/training/modules/pad-web/6-exercise)
+- [Exception Handling](https://learn.microsoft.com/en-us/training/modules/pad-exception-handling/3-exception-handling)
+- [Exception Handling – Exercise](https://learn.microsoft.com/en-us/training/modules/pad-exception-handling/4-exercise-exception-handling)
+- [Files and Folders Handling](https://learn.microsoft.com/en-us/training/modules/pad-files-folders-handling/4-exercise)
+
 **Happy automating!** 🚀
