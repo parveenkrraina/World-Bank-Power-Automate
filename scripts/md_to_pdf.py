@@ -1,12 +1,28 @@
 from pathlib import Path
 import argparse
+import re
 import markdown
 from xhtml2pdf import pisa
 
 
+def _strip_front_matter(text: str) -> str:
+    return re.sub(r"\A---\s*\n.*?\n---\s*\n", "", text, flags=re.DOTALL)
+
+
+def _link_callback(uri: str, base_path: Path) -> str:
+    if uri.startswith(("http://", "https://", "data:")):
+        return uri
+
+    candidate = Path(uri)
+    if not candidate.is_absolute():
+        candidate = (base_path / candidate).resolve()
+
+    return str(candidate)
+
+
 def convert_markdown_to_pdf(markdown_path: Path, pdf_path: Path) -> None:
-    text = markdown_path.read_text(encoding="utf-8")
-    html_body = markdown.markdown(text, extensions=["tables", "fenced_code", "toc"])
+    text = _strip_front_matter(markdown_path.read_text(encoding="utf-8"))
+    html_body = markdown.markdown(text, extensions=["extra", "sane_lists", "toc"])
     html = f"""
     <html>
     <head>
@@ -28,7 +44,11 @@ def convert_markdown_to_pdf(markdown_path: Path, pdf_path: Path) -> None:
 
     pdf_path.parent.mkdir(parents=True, exist_ok=True)
     with pdf_path.open("wb") as output_file:
-        result = pisa.CreatePDF(src=html, dest=output_file)
+        result = pisa.CreatePDF(
+            src=html,
+            dest=output_file,
+            link_callback=lambda uri, _: _link_callback(uri, markdown_path.parent),
+        )
     if result.err:
         raise RuntimeError("PDF generation failed.")
 
